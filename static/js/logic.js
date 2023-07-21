@@ -6,9 +6,6 @@ let myMap = L.map("map", {
     zoom: 6
 });
 
-
-
-
 // Adding a tile layer (the background map image) to our map:
 // We use the addTo() method to add objects to our map.
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
