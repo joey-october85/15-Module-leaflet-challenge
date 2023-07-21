@@ -37,16 +37,16 @@ promise.then(function (data) {
         // console.log(milliseconds)
 
         if (depth > 90) {
-            magcolor = "#cf0606"
+            magcolor = "#ff5f64"
         } else if (depth > 69) {
-            magcolor = "#b54e04"
+            magcolor = "#fca25d"
         } else if (depth > 49) {
-            magcolor = "#fc710d"
+            magcolor = "#fdb72a"
         } else if (depth > 29) {
-            magcolor = "#fcb603"
+            magcolor = "#f7db11"
         } else if (depth > 9) {
-            magcolor = "#fcf403"
-        } else { magcolor = "#32a852" }
+            magcolor = "#dcf400"
+        } else { magcolor = "#a4f600" }
 
 
         L.circle([location[1], location[0]], {
@@ -62,7 +62,7 @@ promise.then(function (data) {
     let legend = L.control({ position: "bottomright" });
     legend.onAdd = function () {
         let div = L.DomUtil.create("div", "info legend");
-        let colors = ["#32a852", "#fcf403", "#fcb603", "#fc710d", "#b54e04", "#cf0606"]
+        let colors = ["#a4f600", "#dcf400", "#f7db11", "#fdb72a", "#fca25d", "#ff5f64"]
         let labels = [-10, 10, 30, 50, 70, 90];
 
         for (let i = 0; i < labels.length; i++) {
